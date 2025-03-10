@@ -12,8 +12,8 @@ const App = () => {
   
   return (
     <div className="square">
-        <h1 className="text-2xl font-bold text-center mb-4">Sıkça Sorulan Sorular</h1>
-    <div className="bg-blue-600 text-white p-4 rounded-lg">
+        <h1>Sıkça Sorulan Sorular</h1>
+    <div>
       {questiosAndAnswers.map((item,index) => <Accordion key={index} title={item.title} context={item.content}/>)}
     </div>
     </div>
